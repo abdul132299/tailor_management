@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#fff"
+    tools:context="com.example.abdul.tailormanagement.AddEmployee">
+
+    <LinearLayout
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_employee_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#000"
+            android:hint="Employee Name"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edit_employee_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#000"
+            android:hint="Employee Phone Number"
+            android:inputType="phone"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edit_employee_address"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#000"
+            android:hint="Employee Address"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edit_employee_gender"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#000"
+            android:textColor="#000"/>
+
+
+
+        <EditText
+            android:id="@+id/edit_employee_rank"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#000"
+            android:hint="Rank"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edit_employee_salary"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#000"
+            android:inputType="number"
+            android:hint="Employee Salary"
+            android:textColor="#000"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/btn_employee_save"
+            android:gravity="center"
+            android:background="@drawable/buttonstyleselector"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

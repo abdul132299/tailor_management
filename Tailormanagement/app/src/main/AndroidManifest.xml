@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abdul.tailormanagement">
+
+    <uses-feature
+        android:name="android.hardware.Camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img4"
+        android:label="Tailor Manager"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TailorSplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".AddEmployee" />
+        <activity android:name=".Home" />
+        <activity
+            android:name=".Customers"
+            android:label="@string/title_activity_customers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Employees"
+            android:label="@string/title_activity_employees"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".About" />
+        <activity android:name=".NewCustomer" />
+        <activity android:name=".EmployeeData" />
+        <activity android:name=".EmpSendMessage" />
+        <activity android:name=".CustomerRecord" />
+        <activity android:name=".CustomerSendMessage"></activity>
+    </application>
+
+</manifest>

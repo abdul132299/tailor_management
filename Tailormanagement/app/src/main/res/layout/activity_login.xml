@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/img5">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="46dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="70dp"
+            android:textStyle="bold"
+            android:textColor="#f23557"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:id="@+id/Edit_text_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:hint="USERNAME"
+            android:textColorHint="#000"
+            android:textColor="#000"
+            android:gravity="center"
+            android:background="@drawable/edittextstyle"/>
+
+        <EditText
+            android:id="@+id/Edit_text_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:hint="PASSWORD"
+            android:textColorHint="#000"
+            android:textColor="#000"
+            android:inputType="textPassword"
+            android:background="@drawable/edittextstyle"/>
+
+        <Button
+            android:id="@+id/Button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonstyleselector"
+            android:text="LOGIN"
+            android:textColor="#fff"
+            />
+        </LinearLayout>
+</ScrollView>

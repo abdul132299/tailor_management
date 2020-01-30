@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ccc"
+    tools:context="com.example.abdul.tailormanagement.NewCustomer">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:layout_gravity="center"
+            android:textColor="#1e90ff"
+            android:text="Profile"
+            android:textSize="30dp"/>
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:hint="Name"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:hint="Address"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="18dp"
+                android:textColor="#000"/>
+
+            <GridLayout
+                android:id="@+id/grid_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_customer_male"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="#000"
+                        android:textSize="18dp"/>
+                    <RadioButton
+                        android:id="@+id/radio_customer_female"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textColor="#000"
+                        android:textSize="18dp"/>
+                </RadioGroup>
+
+            </GridLayout>
+
+            <EditText
+                android:id="@+id/edit_arrival_date"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#000"
+                android:hint="Arrival date"
+                android:inputType="date"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_final_date"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:hint="Final date"
+                android:inputType="date"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_Measurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="#1e90ff"
+            android:text="Measurement"
+            android:textSize="30dp"/>
+
+        <LinearLayout
+            android:id="@+id/measurement_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_bust"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Bust"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_waist"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Waist"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_hips"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Hips"
+                android:textColor="#000"/>
+
+
+            <EditText
+                android:id="@+id/edit_blouse_length"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Blouse Length"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_half_length"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Half Length"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_full_length"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Full Length"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_hand_length"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Hand Length"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_roundhand_length"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Round Hand Length"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_skirt_length"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Skirt Length"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_shoulder"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Shoulder"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_length"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Length"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_neck"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Neck"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_trouser_length"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Trouser Length"
+                android:textColor="#000"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_Sewing_Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="#1e90ff"
+            android:text="Sewing Details"
+            android:textSize="30dp"/>
+
+        <LinearLayout
+            android:id="@+id/sewing_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/btn_sewing_details_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cloth Photo"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#1e90ff"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/img1"
+                    android:src="@drawable/ic_photo_camera_black_24dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CHOOSE STYLES"
+                    android:layout_marginTop="50dp"
+                    android:textSize="20dp"
+                    android:textColor="#1e90ff"
+                    android:layout_below="@+id/img1"
+                    android:id="@+id/txt_styles"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/txt_styles"
+                    android:id="@+id/img2"
+                    android:src="@drawable/ic_menu_gallery"/>
+
+
+                <EditText
+                    android:id="@+id/edit_sewingdetails_comment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img2"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:hint="COMMENT"
+                    android:inputType="textMultiLine" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_Payment_Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="#1e90ff"
+            android:layout_marginBottom="20dp"
+            android:text="Payment Details"
+            android:textSize="30dp"/>
+        <LinearLayout
+            android:id="@+id/paymentdetails_layout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/edit_total_payment"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Total Payment"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_deposit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Deposit"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/edit_balance"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                android:inputType="number"
+                android:hint="Balance"
+                android:textColor="#000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/btn_paymentdetails_save"
+                android:gravity="center"
+                android:background="@drawable/buttonstyleselector"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

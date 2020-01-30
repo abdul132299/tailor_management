@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:padding="10dp"
+    tools:context="com.example.abdul.tailormanagement.EmpSendMessage">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edt_number"
+        android:inputType="number"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_marginTop="0dp"
+       />
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ccc">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/emp_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edt_message"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:hint="Type text message"
+                    android:textColor="#000"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/img_btn_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/edt_message"
+                    android:background="@drawable/ic_menu_send"/>
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

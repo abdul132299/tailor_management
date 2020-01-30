@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sewing_details">
+        <item>Skirt and Blouse</item>
+        <item>Wrapper Skirt and Blouse</item>
+        <item>Plane Wrapper and Blouse</item>
+        <item>A-line Gown</item>
+        <item>Flay Gown</item>
+        <item>Three-qauter Gown</item>
+        <item>Six Pieces Gown</item>
+        <item>Four Pieces Gown</item>
+        <item>Bubu</item>
+        <item>Buba</item>
+        <item>Fitted Gown</item>
+        <item>Kimono</item>
+        <item>Kaftan</item>
+        <item>Jumper</item>
+        <item>south south/Short Fitted</item>
+        <item>Dansiki</item>
+        <item>Jallabiya</item>
+        <item>shirt and Trouser</item>
+        <item>Babban Riga/Agbada</item>
+    </string-array>
+
+</resources>
